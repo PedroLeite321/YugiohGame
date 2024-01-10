@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/buttons.css">
+    <link rel="stylesheet" href="./styles/containers_and_frames.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Scripts -->
+    <script src="./script/engine.js" defer></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Yugioh Game</title>
+</head>
+<body>
+    <div class="bg-video">
+        <video class="video" autoplay loop muted>
+            <source src="./assets/video/yugi.mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="container__left framed-golden-2">
+            <div class="score__box frame">Win: 0 | Lose: 0</div>
+            <div class="card"></div>
+            <div class="card_details frame">
+                <p id="card-name">a</p>
+                <p id="card-type">a</p>
+            </div>
+        </div>
+        <div class="container__right">
+            <div class="card-box__container">
+                <div class="card-box framed" id="computer-cards"></div>
+                <div class="card-versus">
+                    <div class="versus-top">
+                        <div class="card-infield">
+                            <img id="player-field-card" height="180px" width="125px">
+                        </div>
+                        <!-- Dynamic css -->
+                        <img  height="100px" width="125px" src="./assets/icons/millenium2.png" alt="" id="player-field-card">
+                    </div>
+                    <div class="versus-bottom">
+                        <div class="card-infield">
+                            <img id="computer-field-card" height="180px" width="125px">
+                        </div>
+                        <button id="next-duel" class="rpgui-button">
+                            ganhou
+                        </button>
+                    </div>
+                </div>
+                <div class="card-box framed"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
