@@ -33,11 +33,14 @@
 }
 
 .container__left    {
+    display:flex;
     width:35%;
+    height:100vh;
     min-width:300px;
     flex-direction:column;
     align-items:center;
-    justify-content: space-around;
+    justify-content: space-between;
+    
 }
 
 .container__right  {
@@ -67,12 +70,12 @@
 }
 .card_details   {
     background-color:#fff;
-    padding: 1rem;
+    padding: 1em;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content: space-between;
-    height:6rem;
+    height:9rem;
     width:100%;
     
 }
@@ -119,4 +122,30 @@
 
 .card-infield   {
     border:solid rgb(236, 80, 41) 1px;
+}
+
+.card_details   {
+    text-align:center;
+    display:block;
+   
+}
+
+#card-name  {
+    font-size:1.2em;
+    padding:10px;
+    font-weight: 100;
+    
+}
+
+.menu_avatar    {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#card-type  {
+    margin-bottom:10px;
+    color:rgb(102, 106, 95);
+    font-size: 0.7em;
+    
 }
