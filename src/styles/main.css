@@ -51,8 +51,12 @@
 }
 
 .score-box  {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
     background-color:white;
-    padding:30px;
+    padding:25px;
+    justify-content: space-around;
 
 }
 
@@ -122,6 +126,8 @@
 
 .card-infield   {
     border:solid rgb(236, 80, 41) 1px;
+    height:180px;
+    width:125px;
 }
 
 .card_details   {
@@ -149,3 +155,14 @@
     font-size: 0.7em;
     
 }
+
+#audio-player {
+    width: 50px;
+    height: 40px;
+    transition: all 0.2s;
+  
+  }
+  
+  #audio-player:hover {
+    transform: scale(1.2);
+  }
